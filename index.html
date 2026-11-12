@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pasteles de mamá · Mostachón de fresa por pedido</title>
+<meta name="description" content="Mostachón de fresa, tiramisú y postres hechos en casa, por pedido.">
+<meta name="theme-color" content="#b78c5c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍓%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="fonts/fraunces-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/roseta-entera.webp" as="image">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<!--
+  DATOS DEL NEGOCIO
+  data-whatsapp: número con lada de país, sin espacios ni signos (ej. 5219991234567).
+  Mientras esté vacío, los botones abren WhatsApp sin destinatario.
+-->
+<body data-whatsapp="">
+
+<!-- Mesa: los recortes que se mueven con el scroll. Decorativo. -->
+<div class="mesa" aria-hidden="true">
+  <!-- El orden de las .flot coincide con el arreglo FLOTANTES de main.js -->
+  <img class="pieza flot" data-flot src="img/helecho.webp" alt="">
+  <img class="pieza flot" data-flot src="img/papel-collage.webp" alt="">
+  <img class="pieza flot" data-flot src="img/papel-flores.webp" alt="">
+  <div class="pieza pastel" data-pieza="pastel">
+    <img class="pastel__blonda" src="img/blonda.webp" alt="">
+    <img class="pastel__entero" src="img/roseta-entera.webp" alt="">
+    <img class="pastel__resto" src="img/roseta-resto.webp" alt="">
+    <img class="pastel__rebanada" src="img/roseta-rebanada.webp" alt="">
+  </div>
+  <img class="pieza fresota" data-pieza="fresota" src="img/planta-fresa.webp" alt="">
+  <img class="pieza flot" data-flot src="img/girasoles.webp" alt="">
+  <img class="pieza flot" data-flot src="img/sello-rojo.webp" alt="">
+  <img class="pieza flot" data-flot src="img/mariposas.webp" alt="">
+  <img class="pieza flot" data-flot src="img/flor.webp" alt="">
+  <img class="pieza flot" data-flot src="img/sello-oro.webp" alt="">
+</div>
+
+<header class="barra" data-rasgar="3">
+  <a class="barra__marca" href="#inicio">Pasteles de mamá</a>
+  <nav class="barra__nav" aria-label="Secciones">
+    <a href="#por-dentro">Por dentro</a>
+    <a href="#postres">Postres</a>
+  </nav>
+  <a class="boton boton--chico js-wa" href="#pedido">Pedir</a>
+</header>
+
+<main>
+
+  <!-- 0 · Portada -->
+  <section class="acto acto--portada" id="inicio" data-acto>
+    <div class="acto__fondo">
+      <div class="hoja hoja--libro" data-rasgar="14" data-prof="0.25" aria-hidden="true">
+        <p>…se baten las claras hasta que hagan picos firmes y entonces, poco a poco, el azúcar. Nadie tiene prisa. La nuez se pica a cuchillo, nunca en licuadora, para que truene al morder; las galletas se rompen con las manos. Todo se envuelve con cuidado, que no se baje el merengue, y al horno hasta que la casa huela a domingo. Ya frío, encima va la crema de queso, bien batida, y las fresas una por una, de afuera hacia el centro. Así se ha hecho siempre en esta cocina y así se sigue haciendo: sin atajos, con las manos, para quien lo pida. Se baten las claras hasta que hagan picos firmes y entonces, poco a poco, el azúcar. Nadie tiene prisa. La nuez se pica a cuchillo, nunca en licuadora, para que truene al morder…</p>
+      </div>
+      <div class="hoja hoja--cielo" data-rasgar="18" data-prof="0.12" aria-hidden="true"></div>
+      <div class="hoja hoja--mantel" data-rasgar="12" data-prof="0.4" aria-hidden="true"></div>
+    </div>
+    <div class="acto__fijo">
+      <h1 class="titular recortado" data-capa>Mostachón<br>de fresa</h1>
+      <div class="portada__pie" data-capa>
+        <p class="portada__texto" data-rasgar="5">Hecho en casa, por pedido. Merengue con nuez, crema de queso y fresas acomodadas a mano.</p>
+        <div class="portada__acciones">
+          <a class="boton js-wa" href="#pedido">Pedir por WhatsApp</a>
+          <a class="enlace" href="#postres">Ver todos los postres</a>
+        </div>
+      </div>
+      <p class="nota nota--portada" data-capa data-rasgar="4">baja despacio,<br>que se corta solo</p>
+    </div>
+  </section>
+
+  <!-- 1 · La rebanada: la nota sale de atrás del pastel -->
+  <section class="acto acto--corte" id="por-dentro" data-acto>
+    <div class="acto__fondo">
+      <div class="receta" data-rasgar="9" data-sale>
+        <h2>Córtalo y mira</h2>
+        <ul class="receta__capas">
+          <li><span>Arriba</span> fresas frescas</li>
+          <li><span>En medio</span> una capa generosa de crema de queso</li>
+          <li><span>Abajo</span> merengue crujiente con nuez y galleta</li>
+        </ul>
+        <p class="nota receta__firma">nada más, nada menos</p>
+      </div>
+    </div>
+    <div class="acto__fijo"></div>
+  </section>
+
+  <!-- 2 · La fresa -->
+  <section class="acto acto--fresa" data-acto>
+    <div class="acto__fijo">
+      <div class="tira" data-capa>
+        <h2 class="tira__titulo" data-rasgar="6">Todo empieza con la
+          <span class="letras" role="img" aria-label="fresa"><img src="img/letra-f.webp" alt=""><img src="img/letra-r.webp" alt=""><img src="img/letra-e.webp" alt=""><img src="img/letra-s.webp" alt=""><img src="img/letra-a.webp" alt=""></span>
+        </h2>
+        <p class="tira__texto" data-rasgar="5">Se escogen una por una y se acomodan a mano. Por eso cada mostachón se prepara cuando lo pides, no antes.</p>
+        <ul class="sellos">
+          <li>Por pedido</li>
+          <li>Hecho a mano</li>
+          <li>Receta de casa</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · Los postres -->
+  <section class="acto acto--menu" id="postres" data-acto data-libre>
+    <div class="menu">
+      <h2 class="menu__titulo recortado">Lo que sale<br>de la cocina</h2>
+      <p class="nota menu__pista">agarra una foto y muévela</p>
+
+      <!--
+        FOTOS: cada polaroid trae un recorte provisional.
+        Para usar una foto real, guarda la imagen en /img y cambia el src del <img>.
+        PRECIOS: escribe el precio dentro de <p class="postre__precio">.
+      -->
+      <ul class="menu__lista">
+        <li class="postre postre--a" data-rasgar="7">
+          <figure class="polaroid polaroid--foto" data-arrastra>
+            <img src="img/mostachon-foto.webp" alt="Mostachón cubierto de rebanadas de fresa acomodadas como flor, visto desde arriba">
+          </figure>
+          <h3>Mostachón de fresa</h3>
+          <p>Base de merengue con nuez y galleta, crema de queso y fresas frescas.</p>
+          <p class="postre__precio">Pregunta por tamaños y precios</p>
+          <a class="boton boton--chico js-wa" data-postre="un mostachón de fresa" href="#pedido">Pedir mostachón</a>
+        </li>
+
+        <li class="postre postre--b" data-rasgar="7">
+          <figure class="polaroid polaroid--pendiente" data-arrastra>
+            <!-- Cuando haya foto: <img src="img/tiramisu.jpg" alt="Tiramisú"> y cambia la clase a polaroid--foto -->
+            <p class="nota">aquí va la foto<br>del tiramisú</p>
+          </figure>
+          <h3>Tiramisú</h3>
+          <p>Soletas mojadas en café, crema suave y cacao espolvoreado al final.</p>
+          <p class="postre__precio">Pregunta por tamaños y precios</p>
+          <a class="boton boton--chico js-wa" data-postre="un tiramisú" href="#pedido">Pedir tiramisú</a>
+        </li>
+
+        <li class="postre postre--c" data-rasgar="7">
+          <figure class="polaroid polaroid--cielo" data-arrastra>
+            <img src="img/girasoles.webp" alt="Ramo de girasoles hecho con papel recortado">
+          </figure>
+          <h3>¿Otro antojo?</h3>
+          <p>Cuéntale qué se te antoja o para qué ocasión es, y te dice qué puede preparar.</p>
+          <p class="postre__precio">Se cotiza según el pedido</p>
+          <a class="boton boton--chico js-wa" data-postre="un postre especial" href="#pedido">Preguntar</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4 · El pedido -->
+  <section class="acto acto--pedido" id="pedido" data-acto>
+    <div class="acto__fijo">
+      <div class="pedido" data-capa>
+        <h2 class="pedido__titulo recortado">¿Se te antojó?</h2>
+        <ol class="pasos">
+          <li data-rasgar="4">Escoge tu postre</li>
+          <li data-rasgar="4">Escribe por WhatsApp con la fecha</li>
+          <li data-rasgar="4">Pasa por él recién hecho</li>
+        </ol>
+        <a class="boton boton--grande js-wa" href="#pedido">Pedir por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie">
+  <p>Pasteles de mamá · Postres hechos en casa</p>
+</footer>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
